@@ -123,7 +123,7 @@ df_state_atictivities_size= pd.read_csv(r'./files/empresas_atividades_mapa_parce
 cnaes = pd.read_csv(r'./files/activities_code.csv')
 activities = cnaes['desc_activity'].tolist()
 
-clientes_hexagon = pd.read_excel(r'./files/clientes HEXAGON.xlsx').dropna(how='all')
+clientes_hexagon = pd.read_excel(r'./files/clientes HEXAGON.xlsx', engine='openpyxl').dropna(how='all')
 
 empresas_hexagon = pd.read_csv(r'./files/empresas_descritivos_parceiros.csv')
 
