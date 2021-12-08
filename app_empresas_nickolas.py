@@ -6,6 +6,7 @@ from streamlit_folium import folium_static
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+import openpyxl
 
 
 st.set_page_config(layout="wide")
